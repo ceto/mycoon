@@ -2,8 +2,12 @@
   <div class="grid-x grid-margin-x align-middle">
     <div class="cell medium-6">
       <h2>Éttermi rendelés felvétel és fizetés telefonos applikációval pincér nélkül.</h2>
+      <p>
+        A hagyományos éttermi ügymenetre - a vendég-felszolgáló interakciók minimalizálására -
+        kínálunk online alternatívát.
+      </p>
       <br />
-      <a href="#" class="button">Hogyan működik</a>
+      <a href="#" class="button">Mutatjuk a részleteket</a>
     </div>
     <div class="cell medium-6">
       <img src="https://placehold.it/800x800" alt="" />
@@ -16,10 +20,6 @@
     <div class="cell">
       <h3>Étterem várakozás nélkül</h3>
       <p class="lead">
-        A hagyományos éttermi ügymenetre - a vendég-felszolgáló interakciók minimalizálására -
-        kínálunk alternatívát.
-      </p>
-      <p class="lead">
         <strong>MyCoon asztalnál*</strong>, helyet foglaló a vendég a telefonján választja ki a
         kívánt ételt. Kattintásra saját maga veszi fel a rendelését. A felszolgálás ugyan hagyományos
         módon történik de a fizetés telefonról online végezhető. Az automatizálásnak köszönhetően az
@@ -31,39 +31,123 @@
 </div>
 <hr />
 <div class="grid-container">
-  <div class="grid-x grid-margin-x align-right">
-    <div class="large-6 cell">
-      <h4>Hogyan működik</h4>
-      <ol>
-        <li>
-          <strong>Becsekkolás</strong> - Bemész az étterembe. Leülsz egy MyCoon asztalhoz és az
-          okostelefonodat az NFC-s mosómedvéhez érinted.
-        </li>
-        <li>
-          <strong>Rendelés</strong> - A készülékeden megjelenik a hely étlapja amelyből kiválasztod
-          az ételt/italt ami azonnal befut a konyhára online. Éttermi tartózkodásod során ezt
-          többször is elvégezheted.
-        </li>
-        <li>
-          <strong>Felszolgálás</strong> - Rendelésedet hús vér felszolgáló hozza ki. Pincért hívhatsz
-          egyébként bármikor a "Pincért Kérek" gombra kattintva.
-        </li>
-        <li>
-          <strong>Fizetés</strong> - Fogyasztásod végösszegét végig nyomon követheted. Ha végeztél
-          fizethetsz appon keresztül elektronikusan, vagy a <em>pincért kérek</em> gombot megnyomva
-          hagyományos módon.
-        </li>
-      </ol>
+  <div class="grid-x grid-margin-x align-center">
+    <div class="cell large-8">
+      <h2>MyCoon működése üzemeltetői oldalon</h2>
+      <ul class="tabs" data-tabs id="howitworkstabs">
+        <li class="tabs-title is-active"><a href="#etterem" aria-selected="true">Étterem</a></li>
+        <li class="tabs-title"><a href="#bufe">Gyorsbüfé</a></li>
+      </ul>
+      <div class="tabs-content" data-tabs-content="howitworkstabs">
+        <div class="tabs-panel is-active" id="etterem">
+          <h4>Éttermi modell működése</h4>
+          <ol>
+            <li>
+              <strong>Gyors ültetés kérdések nélkül</strong> - Az érkező vendég helyet foglal egy
+              Mycoon asztalnál. Ebben a kiszolgáló személyzet segítséget nyújthat. További teendőre
+              nincs szükség, hiszen a rendelés applikáción keresztül történik..
+            </li>
+            <li>
+              <strong>Rendelések befutása</strong> - A Mycoon asztaloktól érkező minden rendelés vagy
+              személyes beavatkozást igénylő kérés, a poszton lévő személyzet tabletjére érkeznek.
+              Azokat továbbítja a konyhára.
+            </li>
+            <li>
+              <strong>Kiszolgálás</strong> - Ez hagyományos módon történik. A felszolgáló kiviszi az
+              ételt az asztalhoz.
+            </li>
+            <li>
+              <strong>Vendég fizet és távozik</strong> - Amennyiben Online történik a számla
+              rendezése nincs különösebb teendő. <em>"Asztal fizetve, vendég távozik"</em> üzenet az
+              üzemeltetői tabletre érkezik.
+            </li>
+          </ol>
+        </div>
+        <div class="tabs-panel" id="bufe">
+          <h4>Gyorsbüfé(előre fizető) modell</h4>
+          <ol>
+            <li>
+              <strong>Rendelések felvétele</strong> - A Mycoon applikációbol érkező rendelések a büfé
+              személyzet tabletjére érkeznek. Azokat a vásárló a rendelés feladásakor telefonján
+              előre fizeti ki online. Nincs készpénz forgalom.
+            </li>
+            <li>
+              <strong>Kiszolgálás</strong> Az elkészült rendelésről a személyzet gombnyomásra push
+              üzenetet küld a vásárló telefonjára a pultos átvétel módjáról. A vendég átveszi az
+              ételt a pultnál. Viszlát.
+            </li>
+          </ol>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 <hr />
 <div class="grid-container">
-  <div class="grid-x grid-margin-x">
-    <div class="large-6 cell">
+  <div class="grid-x grid-margin-x align-center">
+    <div class="cell large-8">
+      <h2>Ez történik a vendég oldalon</h2>
+      <ul class="tabs" data-tabs id="vendeghowitworkstabs">
+        <li class="tabs-title is-active">
+          <a href="#vendegetterem" aria-selected="true">Étterem</a>
+        </li>
+        <li class="tabs-title"><a href="#vendegbufe">Gyorsbüfé</a></li>
+      </ul>
+      <div class="tabs-content" data-tabs-content="vendeghowitworkstabs">
+        <div class="tabs-panel is-active" id="vendegetterem">
+          <h4>Éttermi modell</h4>
+          <ol>
+            <li>
+              <strong>Becsekkolás</strong> - A vendég leül egy MyCoon asztalhoz és az okostelefonját
+              az NFC-s mosómedvéhez érinti. Ezzel azonosítja magát és az asztalt.
+            </li>
+            <li>
+              <strong>Rendelés</strong> - A készülékén megjelenik a hely étlapja amelyből
+              kiválaszszja az ételt/italt ami azonnal befut a konyhára online. Éttermi tartózkodása
+              során ezt többször is elvégezheti.
+            </li>
+            <li>
+              <strong>Felszolgálás</strong> - Rendelést hús vér felszolgáló hozza ki. Pincért hívható
+              egyébként bármikor a "Pincért Kérek" gombra kattintva.
+            </li>
+            <li>
+              <strong>Fizetés</strong> - Fogyasztás végösszegét végig nyomon követheti a Vendég. Ha
+              végezett fizethet appon keresztül elektronikusan, vagy a <em>pincért kérek</em> gombot
+              megnyomva hagyományos módon.
+            </li>
+          </ol>
+        </div>
+        <div class="tabs-panel" id="vendegbufe">
+          <h4>Gyorsbüfé(előre fizető) modell</h4>
+          <ol>
+            <li>
+              <strong>Becsekkolás</strong> - A vendég az okostelefonját az NFC-s mosómedvéhez érinti,
+              vagy lokációja alapján párosítja magát a rendelési helyhez.
+            </li>
+            <li>
+              <strong>Rendelés sorbanállás és készpénz nélkül</strong> - A készülékén megjelenik a
+              hely étlapja amelyből összeállítja a rendelését és kifizeti online. Ezzel rendelése
+              azonnal befut a konyhára.
+            </li>
+            <li>
+              <strong>Rendelés átvétele</strong> - A készülékén push üzenetet kap, hogy
+              <em>rendelése elkészült</em> azt átveheti az üzenetben leírt módon a pultnál.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr />
+<div class="grid-container">
+  <div class="grid-x grid-margin-x align-center">
+    <div class="large-8 cell">
       <h4>Előnyök üzemeltetői szemmel</h4>
       <ul>
-        <li>MyCoonos rendelések felvételéhez és azok rögzítésére nincs szükség pincérre/pultosra</li>
+        <li>
+          MyCoonos rendelések felvételéhez és azok rögzítésére nincs szükség pincérre/pultosra
+        </li>
         <li>Online fizetés esetén nem kell a személyzetnek pénzt kezelnie</li>
         <li>
           A személyzet munkájának egy részét automatizálva, a meglévő kiszolgáló kapacitásodat tudod
@@ -75,3 +159,71 @@
     </div>
   </div>
 </div>
+<hr />
+<div class="grid-container">
+  <div class="grid-x grid-margin-x align-center">
+    <div class="large-8 cell">
+      <h4>Mennyibe kerül?</h4>
+      <p class="lead">
+        A Mycoon-on keresztül lebonyolított rendelések végösszege után jutalékot számítunk fel. Ennek
+        mértéke 1%. Ezen felül az online fizetési szolgáltató járulékaira kell számítani. Ennek
+        mértéke további 1 - 1,5%. A rendszer üzembehelyezése ingyenes.
+      </p>
+    </div>
+  </div>
+</div>
+<hr />
+<div class="grid-container">
+  <div class="grid-x grid-margin-x align-center">
+    <div class="medium-10 large-8 cell">
+      <h5>Innovatív étterem és büfé üzemeltetőket keresünk</h5>
+      <h3>Tesztüzemünkben most 6 hónapig ingyen kipróbálhatod</h3>
+      <p class="lead">
+        A MyCoon hamarosan elérhető lesz. Bevezetés alatt a jelentkezőknek ajándékba hat hónapig
+        ingyen adjuk a szolgáltatást. Vegyél részt az egyedi, saját üzletspecifikus igények
+        összeállításában.
+      </p>
+      <p><a href="#" class="button">Jelentkezés tesztüzemre</a></p>
+      <p>
+        *az elektronikus fizetés költségét (kb. 1%) nem tudjuk átvállalni, saját jutalékot viszont
+        nem számítunk fel.
+      </p>
+    </div>
+  </div>
+</div>
+<hr />
+<div class="grid-container">
+  <div class="grid-x grid-margin-x align-center">
+    <div class="medium-6 large-6 cell">
+      <div class="acallout">
+        <h6>Találkozzunk és beszélgessünk</h6>
+        <h3>Jelentkezés tesztüzemre!</h3>
+        <p>
+          Töltsd ki ürlapunkat, vagy hívj minket a <a href="#">+36 (70) 8712-874</a> telefonszámon
+          esetleg írj emailt közvetlenül a <a href="mailto:asd@ass.hu">hello@mycoon.hu</a> címre. A
+          jelentkezés semmilyen kötöttséget nem ró fel rád.
+        </p>
+        <form>
+          <label
+            >Név
+            <input type="text" placeholder="" />
+          </label>
+          <label
+            >E-mail
+            <input type="email" placeholder="" />
+          </label>
+          <label
+            >Telefon
+            <input type="email" placeholder="" />
+          </label>
+          <label
+            >megjegyzés
+            <textarea name="" id="" rows="3"></textarea>
+          </label>
+          <input type="submit" class="button large expanded" value="Elküld" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<hr />
